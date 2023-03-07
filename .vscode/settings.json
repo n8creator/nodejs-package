@@ -1,13 +1,21 @@
 {
+  "eslint.trace.server": "messages",
+  "eslint.debug": true,
+
   "eslint.enable": true,
-  "eslint.run":"onType",
+  "eslint.run": "onType",
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+
   "eslint.packageManager": "npm",
+
   "eslint.workingDirectories": [
     {
       "directory": "./",
       "!cwd": true
     }
   ],
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
@@ -19,12 +27,9 @@
     "typescript",
     "html"
   ],
-  "eslint.format.enable": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.options": {
-    //"configFile": "./.eslintrc.json",
-    "overrideConfigFile": "./.eslintrc.json"
+    //"configFile": "./.eslintrc.yml",
+    "overrideConfigFile": "./.eslintrc.yml"
   },
   "eslint.nodePath": "./node_modules"
 }
